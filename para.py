@@ -6,11 +6,11 @@
 IMAGE_SIZE = 512  # 保留供参考，已不生效
 
 # 优化迭代次数（LBFGS 以 closure 调用次数计）
-NUM_STEPS = 300
+NUM_STEPS = 500
 
 # 损失权重
 CONTENT_WEIGHT = 1          # 内容保留强度
-STYLE_WEIGHT   = 1_000_000  # 风格迁移强度（越大风格越浓）
+STYLE_WEIGHT   = 10_000_000  # 风格迁移强度（越大风格越浓）
 
 # LBFGS 学习率（通常固定为 1.0）
 LEARNING_RATE = 1.0
